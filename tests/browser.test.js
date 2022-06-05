@@ -36,7 +36,7 @@ describe('Clicking "Pusha till stacken"', () => {
 
 (async function testingPop() {
     try {
-        let pop = await driver.findElement(By.id('popp'));
+        let pop = await driver.findElement(By.id('pop'));
         await pop.click();
         let prompt = await driver.switchTo().alert();
         await prompt.sendKeys('Are you sure?');
